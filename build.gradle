@@ -68,6 +68,9 @@ repositories {
     }
     maven { url = 'https://maven.minecraftforge.net/' }
     maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+    maven {
+        url = "https://maven.is-immensely.gay/releases"
+    }
 }
 
 base {
@@ -174,6 +177,8 @@ dependencies {
     implementation "io.wispforest:owo-lib-neoforge:${owo_version}"
     interfaceInjectionData "io.wispforest:owo-lib-neoforge:${owo_version}"
     implementation "org.sinytra.forgified-fabric-api:forgified-fabric-api:${forgified_fabric_api_version}"
+
+    implementation "de.dafuqs:Fractal:1.6.0+1.21.1-neoforge"
 
     compileOnlyApi "team.lodestar.lodestone:lodestone:${minecraft_version}-${lodestone_version}"
     runtimeOnly "team.lodestar.lodestone:lodestone:${minecraft_version}-${lodestone_version}"
